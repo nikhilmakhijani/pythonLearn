@@ -1,0 +1,21 @@
+analytics_region: us-central1
+apigee_envgroups:
+  evg1:
+    environments:
+    - test
+    - newtest
+    hostnames:
+    - dev3-test.hybrid-apigee.net
+  gr2:
+    environments:
+    - test
+    hostnames:
+    - dev1-test1.hybrid-apigee.net
+apigee_environments:
+- test
+- newtest
+apigeectl_home: /home/nmakhijani/apigeebase/apigeectl/
+env: non-prod
+hybrid_home: /home/nmakhijani/apigeebase/hybrid-files/
+project_id: ''
+runtime_type: HYBRID
