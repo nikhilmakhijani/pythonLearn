@@ -13,7 +13,6 @@ import json
 # Function to check file path 
 def check_path(file):
     path_dir = '/'.join(file.split('/')[:-1])
-    # print( "inside check_path")
     if os.path.exists(path_dir):
        if os.path.exists(file):
           print("INFO : file {} already exists!! overwriting it".format(file))
@@ -32,9 +31,8 @@ def write_json_file(file,data):
     jsondata=json.dumps(data,indent=2)
     write_file(file,jsondata)
 
-# Funtuon to convert from tfvars to json format
+# Funtion to convert from tfvars to json format
 def parse_tfvars(file):
-    #  print("inside parse function")
      check_path(file)
      with open(file, 'r') as fp:
          obj = hcl.load(fp)
