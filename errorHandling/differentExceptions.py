@@ -1,4 +1,3 @@
-from decimal import DivisionByZero
  
 while(True):
  num1 = input("Enter your number or q to exit: ")
@@ -10,7 +9,7 @@ while(True):
    print("your result is: "+str(result))
   except ValueError as e:
    print("Please provide an integer")
-  except DivisionByZero as e:
+  except ZeroDivisionError as e:
    print("You can not divide by zero")
 
 print("thanks for trying")
