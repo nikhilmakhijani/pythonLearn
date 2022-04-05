@@ -1,0 +1,3 @@
+gcp:
+  region: {{ analytics_gcp_region }}
+  projectID: {{ project_id }}
