@@ -1,4 +1,9 @@
-
+'''
+step 1 - Add add arguments using argument parser
+step 2 - Function to read jinja template
+step 3 - Function to parse JSON
+step 4 - Write file function to create file
+'''
 import argparse
 import jinja2
 import os
@@ -52,7 +57,6 @@ def main():
     template = read_jinja_template("test.yaml",args.template_location)
     input_data = parse_json(input_file)
     outputText = template.render(input_data)
-    #print(outputText)
     write_file(args.output_file,outputText)
 
 if __name__ == '__main__' :
